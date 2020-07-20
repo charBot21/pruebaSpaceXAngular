@@ -1,1 +1,191 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    margin: 0px;
+}
+
+// Texts
+.title-big-xx {
+    font-size: 55px;
+    color: #FFFFFF;
+    font-family: 'Avenir', sans-serif;
+}
+
+.title-big-x {
+    font-size: 45px;
+    color: #FFFFFF;
+    font-family: 'Avenir', sans-serif;
+}
+
+.title-big {
+    font-size: 40px;
+    color: #FFFFFF;
+    font-family: 'Avenir', sans-serif;
+}
+
+.title-medium {
+    font-size: 25px;
+    color: #FFFFFF;
+    font-family: 'Avenir', sans-serif;
+}
+
+.title-description {
+    font-size: 15px;
+    font-family: 'Avenir', sans-serif;
+}
+
+.description {
+    font-size: 10px;
+    font-family: 'Avenir', sans-serif;
+}
+
+.description-about {
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: 'Avenir', sans-serif;
+}
+
+.txt-btn-wiki {
+    font-size: 10px;
+    color: #5C5C5C;
+    font-family: 'Avenir', sans-serif;
+    padding-left: 10px;
+}
+
+
+// Images and icons
+.logo {
+    width: 500px;
+}
+
+.icon-button {
+    width: 20px;
+    margin: auto;
+}
+
+.icon-social-media {
+    width: 50px;
+}
+
+// paginator
+.mat-paginator, .mat-paginator-page-size .mat-select-trigger {
+    background-color: transparent;
+    color: #FFFFFF;
+    font-family: 'Avenir', sans-serif;
+}
+
+// Fonts
+@font-face {
+    font-family: Avenir;
+    src: url('../src/assets/fonts/AvenirLTStd-Medium.otf ');
+}
+
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .title-big-xx {
+        font-size: 30px;
+    }
+
+    .title-big-x {
+        font-size: 25px;
+    }
+
+    .title-big {
+        font-size: 22px;
+    }
+
+    .title-medium {
+        font-size: 15px;
+    }
+
+    .title-description {
+        font-size: 15px;
+    }
+
+    .description {
+        font-size: 10px;
+    }
+
+    .description-about {
+        font-size: 13px;
+    }
+
+    .txt-btn-wiki {
+        font-size: 10px;
+    }
+
+
+    // Images and icons
+    .logo {
+        width: 106px;
+    }
+
+    .icon-button {
+        width: 15px;
+    }
+
+    .icon-social-media {
+        width: 25px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 999px) {
+    /* For tablets: */
+    .title-big-xx {
+        font-size: 40px;
+    }
+
+    .title-big-x {
+        font-size: 35px;
+    }
+
+    .title-big {
+        font-size: 30px;
+    }
+
+    .title-medium {
+        font-size: 20px;
+    }
+
+    .title-description {
+        font-size: 15px;
+    }
+
+    .description {
+        font-size: 10px;
+    }
+
+    .description-about {
+        font-size: 15px;
+    }
+
+    .txt-btn-wiki {
+        font-size: 10px;
+    }
+
+
+    // Images and icons
+    .logo {
+        width: 218px;
+    }
+
+    .icon-button {
+        width: 15px;
+    }
+
+    .icon-social-media {
+        width: 35px;
+    }
+}
+  
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+}

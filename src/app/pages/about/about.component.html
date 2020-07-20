@@ -1,0 +1,37 @@
+<div class="about">
+
+    <div *ngIf="detail$ | async as detail" >
+
+        <div class="title-container">
+            <h1 class="title-big-xx">
+                {{ detail.name }}
+            </h1>
+        </div>
+    
+        <div class="text-container">
+            <p class="description-about" >
+                {{ detail.summary }}
+            </p>
+        </div>
+    
+        <div class="social-media-container">
+    
+            <div>
+                <a [href]="detail.links.twitter" >
+                    <img class="icon-social-media" alt="twitter" src="{{ twitter }}">
+                </a>
+        
+                <a [href]="detail.links.flickr" >
+                    <img class="icon-social-media"  alt="twitter" src="{{ flickr }}">
+                </a>
+        
+                <a [href]="detail.links.website" >
+                    <img class="icon-social-media"  alt="twitter" src="{{ website }}">
+                </a>
+            </div>
+    
+        </div>
+
+    </div>
+
+</div>

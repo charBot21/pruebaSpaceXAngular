@@ -1,0 +1,12 @@
+query companyDetail {
+  company {
+    name
+    links {
+      elon_twitter
+      flickr
+      twitter
+      website
+    }
+    summary
+  }
+}

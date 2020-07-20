@@ -1,0 +1,63 @@
+/* Background del menú */
+.flotante {
+    position: fixed;
+    width: 100%;
+    height: 12%;
+    top: 0px;
+}
+
+.mat-grid-tile {
+    padding-top: 50px;
+}
+
+li {
+    margin-right: 56px;
+}
+
+li a {
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: 'Avenir', sans-serif;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+li.active {
+    border-bottom: 3px solid #FFFFFF;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+    li a {
+        font-size: 15px;
+    }
+
+    li {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 999px) {
+    /* For tablets: */
+
+    li a {
+        font-size: 20px;
+    }
+
+    li {
+        margin-right: 25px;
+    }
+}
+  
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+}

@@ -1,0 +1,21 @@
+{
+    "menu": {
+        "home": "Inicio",
+        "about": "Acerca de"
+    },
+
+    "home": {
+        "sentence": "“Si viéramos realmente el Universo, tal vez lo entenderíamos”.",
+        "autor": "- Jorge Luis Borges."
+    },
+
+    "list_missions": {
+        "title": "Lanzamientos",
+        "date": "Fecha de lanzamiento",
+        "hour": "Hora"
+    },
+
+    "buttons": {
+        "wiki": "Space Wiki"
+    }
+}

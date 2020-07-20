@@ -1,0 +1,53 @@
+<div class="list">
+
+    <div class="title-container" >
+        <h1 class="title-big-x" >
+            {{ 'list_missions.title' | translate }}
+        </h1>
+    </div>
+
+    <!-- List -->
+    <div>
+
+        <div *ngIf="pastLaunches$ | async as pastLaunches" class="cards-container" >
+
+            <mat-card *ngFor="let launch of pastLaunches" [routerLink]="['/', launch.id]">
+
+                <div class="mision-divider">
+                    <img class="img-mission" loading="lazy" [src]="launch.links.flickr_images" alt="{{ launch.mission_name }}" />
+
+                    <div class="description-container">
+                        <mat-card-title class="title-description" [ngClass]="setColor(launch.launch_success)" >
+                            {{ launch.mission_name }}
+                        </mat-card-title>
+
+                        <p class="description" >
+                            {{ 'list_missions.date' | translate }}: {{ getDate(launch.launch_date_utc) }}
+                        </p>
+
+                        <p class="description" >
+                            {{ 'list_missions.hour' | translate }}: {{ getHour(launch.launch_date_utc) }}
+                        </p>
+
+                        <a [href]="launch.links.wikipedia" >
+                            <img class="icon-button" alt="wiki" src="{{ nave }}" >
+                            <p class="txt-btn-wiki">
+                                {{ 'buttons.wiki' | translate }}
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            
+            </mat-card>
+
+        </div>
+        
+
+        <mat-paginator [length]="100"
+              [pageSize]="12"
+              (page)="changePage($event)">
+        </mat-paginator>
+
+    </div>
+
+</div>

@@ -1,0 +1,11 @@
+query pastLaunchesList($offset: Int, $limit: Int) {
+  launchesPast(offset: $offset, limit: $limit) {
+    links {
+      flickr_images
+      wikipedia
+    }
+    mission_name
+    launch_date_utc
+    launch_success
+  }
+}
